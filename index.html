@@ -258,7 +258,7 @@ body.light .theme-toggle::after{transform:translateX(20px);background:var(--cyan
   animation:fadeUp .8s ease both .65s;
 }
 .hero-orb-wrap{position:relative;display:flex;align-items:center;justify-content:center}
-.orb-outer{
+
   width:380px;height:380px;border-radius:50%;
   background:conic-gradient(from 0deg,rgba(0,240,200,.12),rgba(139,92,246,.08),rgba(0,200,240,.12),rgba(0,240,200,.06),rgba(139,92,246,.12),rgba(0,240,200,.12));
   display:flex;align-items:center;justify-content:center;
@@ -266,7 +266,6 @@ body.light .theme-toggle::after{transform:translateX(20px);background:var(--cyan
   border:1px solid rgba(0,240,200,.1);
   box-shadow:0 0 100px rgba(0,240,200,.06),0 0 200px rgba(139,92,246,.04),inset 0 0 80px rgba(0,240,200,.04);
   animation:orbSpin 20s linear infinite;
-}
 @keyframes orbSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 .orb-mid{
   width:290px;height:290px;border-radius:50%;
@@ -287,13 +286,6 @@ body.light .theme-toggle::after{transform:translateX(20px);background:var(--cyan
   border:2px solid rgba(0,240,200,.3);
   box-shadow:0 0 30px rgba(0,240,200,.4),0 0 60px rgba(0,240,200,.15),inset 0 0 20px rgba(0,240,200,.1);
 }
-.orb-ring1{position:absolute;width:430px;height:430px;border-radius:50%;border:1px dashed rgba(0,240,200,.08);animation:orbSpin 35s linear infinite}
-.orb-ring2{position:absolute;width:490px;height:490px;border-radius:50%;border:1px dashed rgba(139,92,246,.07);animation:orbSpin 50s linear infinite reverse}
-.orb-dot{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan);top:50%;left:50%;animation:dotOrbit 8s linear infinite}
-@keyframes dotOrbit{from{transform:rotate(0deg) translateX(190px) rotate(0deg)}to{transform:rotate(360deg) translateX(190px) rotate(-360deg)}}
-.orb-dot2{position:absolute;width:4px;height:4px;border-radius:50%;background:var(--violet);box-shadow:0 0 8px var(--violet);top:50%;left:50%;animation:dotOrbit2 12s linear infinite reverse}
-@keyframes dotOrbit2{from{transform:rotate(0deg) translateX(240px) rotate(0deg)}to{transform:rotate(360deg) translateX(240px) rotate(-360deg)}}
-
 .hero-stats{display:flex;gap:2rem}
 .hstat{
   text-align:center;padding:1rem 1.4rem;
@@ -606,10 +598,6 @@ footer{background:var(--ink2);border-top:1px solid var(--border);padding:1.8rem 
 
   <div class="hero-right">
     <div class="hero-orb-wrap">
-      <div class="orb-ring1"></div>
-      <div class="orb-ring2"></div>
-      <div class="orb-dot"></div>
-      <div class="orb-dot2"></div>
       <div class="orb-outer">
         <div class="orb-mid">
           <div class="orb-inner">
